@@ -31,8 +31,4 @@ routes.get('/products/:id', ProductController.show);
 routes.put('/products', ProductController.update);
 routes.delete('/products', ProductController.remove);
 
-routes.get('/', (req,res) =>{
-    res.json({ message: 'API OK' });
-})
-
 module.exports = routes; 
